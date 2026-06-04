@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import url("./nav-2.css");
+@import url("./main.css");
+@import url("./section1.css");
+@import url("./section2.css");
+@import url("section3.css");
+@import url("./footer.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+#main-nav {
+  position: fixed;
+  z-index: 2;
+  /* opacity: 0.9; */
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(59, 58, 58, 0.9);
+  height: 6.38vh;
+  backdrop-filter: blur(10px);
+}
+#sub-nav {
+  /* border: 2px solid red; */
+  height: inherit;
+  width: 64%;
+  display: flex;
+  align-items: center;
+}
+#sub-nav ol {
+  list-style: none;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#sub-nav ol li {
+  font-size: 12px;
+  color: #bfbfbf;
+  transition: color 0.3s;
+  /* transition-duration: 0.3s; */
+}
+.nav-icons {
+  font-size: 16px;
+}
+.fa-apple {
+  color: #ccc;
+  font-size: 18px;
+}
+.fa-apple:hover {
+  color: #fff;
+  transition: color;
+  transition-duration: 0.3s;
+}
+#sub-nav ol li:hover {
+  color: #fff;
+  cursor: pointer;
+}

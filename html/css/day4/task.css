@@ -1,0 +1,41 @@
+ol>li{
+    background-color: skyblue;
+}
+ol>li>ul>li{
+    background-color: red;
+}
+ol>li>ul>li+li{
+    background-color: green;
+}
+ol>li>ul>li+li>ul>li{
+    background-color: yellow;
+}
+ol>li>ul>li+li>ul>li>ol>li{
+    background-color: blue;
+}
+ol>li>ul>li+li>ul>li>ol>li+li{
+    background-color: red;
+}
+ol>li>ul>li+li>ul>li+li{
+    background-color: crimson;
+}
+
+
+ol>li+li{
+    background-color: crimson;
+}
+ol>li+li>ol>li{
+    background-color: red;
+}
+ol>li+li>ol>li+li{
+    background-color: orangered;
+}
+ol>li+li>ol>li+li>ul>li{
+    background-color: red;
+}
+ol>li+li>ol>li+li>ul>li+li{
+    background-color: green;
+}
+ol>li+li>ol>li+li+li{
+    background-color: purple;
+}

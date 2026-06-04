@@ -1,0 +1,181 @@
+@import url(./footer.css);
+aside{
+    height: 460vh;
+    width: 100%;
+    /* border: 2px solid; */
+}
+#cards{
+    height: 250px;
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-top: 80px;
+}
+#cards h1{
+    font-size: 35px;
+}
+#cards h1+div{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cards h1+div div{
+    height: inherit;
+    width: 360px;
+    /* border: 2px solid; */
+    
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.card div p{
+    font-size: 13px;
+}
+.card div button{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.card div button:hover{
+    background-color: rgb(230, 230, 230);
+}
+.card span img{
+    height: 120px;
+    width: 120px;
+}
+#banner-1,#banner-2,#banner-3{
+    /* border: 2px solid; */
+    padding-top: 100px;
+    height: 120vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner-1>div,#banner-2>div+div,#banner-3 div{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner-1 div img,#banner-2>div+div img,#banner-3 div img{
+    height: 650px;
+    width: 550px;
+}
+#banner-1 div+div,#banner-2 div,#banner-3 div+div{
+    display: block;
+    padding: 200px 100px;
+    position: relative;
+}
+#banner-1 div+div h1,#banner-2 div h1{
+    font-size: 50px;
+}
+#banner-1 div+div button,#banner-2 div button,#banner-3 div+div button{
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+#banner-1 div+div h5{
+    position: absolute;
+    left: 250px;
+    top: 510px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#banner-2 div h5{
+    position: absolute;
+    left: 250px;
+    top: 560px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#banner-1 div+div hr{
+    width: 280px;
+    margin-left: 150px;
+    border-color:rgb(230, 230, 230);
+    cursor: pointer;
+}
+#banner-2 div hr{
+    width: 250px;
+    margin-left: 150px;
+    border-color:rgb(230, 230, 230);
+    cursor: pointer;
+}
+#banner-1 div+div hr:hover,#banner-2 div hr:hover{
+   animation: line 5s;
+}
+@keyframes line {
+    from{
+        border-color:rgb(230, 230, 230);
+    }
+    to{
+        border-color:#000;
+    }
+}
+#banner-3 div+div h1{
+    font-size: 30px;
+}
+#banner-3{
+    margin-bottom: 50px;
+}
+#qr{
+    height: 65vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color:rgb(243, 243, 243) ;
+}
+#sub-qr{
+    height: 80%;
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid; */
+   padding-top: 60px;
+   
+}
+#sub-qr h1{
+    font-size: 40px;
+}
+#sub-qr div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#sub-qr div div{
+    height: 200px;
+    width: 550px;
+    background-color: #fff;
+    /* border:2px solid #000; */
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 20px;
+}
+#sub-qr div div span{
+    margin-left: 10px;
+
+}
+#sub-qr div div span h1{
+    font-size: 25px;
+}
+#sub-qr div div span+h1{
+    margin-left: 30px;
+}

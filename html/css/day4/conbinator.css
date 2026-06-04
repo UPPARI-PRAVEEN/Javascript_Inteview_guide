@@ -1,0 +1,21 @@
+/* decendent selector "     " */
+
+div h1{
+    background-color: orange;
+}
+
+/* child selctor denoted using ">" */
+
+div>h1{
+    background-color: rebeccapurple;
+}
+
+/* Adjacent selector  denoted using "+ */
+
+div + h2{
+    background-color: brown;
+}
+/* genereal sibling denoted using "~ tild" */
+/* div ~ h2{
+    background-color: springgreen;
+} */

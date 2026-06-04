@@ -1,0 +1,49 @@
+#section2 {
+  background-color: #000;
+  height: 83.15vh;
+  cursor: pointer;
+  background-image: url("../assets/iphone-sleep.png");
+  background-repeat: no-repeat;
+  background-size: 70em;
+  background-position: 370px 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#section2 h1,
+#section2 h2 {
+  color: #fff;
+}
+#section2 section button:first-of-type {
+  margin-right: 15px;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  background-color: #0071e3;
+}
+#section2 section button:last-of-type {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #2997ff;
+}
+#section2 section button:hover {
+  background-color: #0077ed;
+}
+#section2 h1 {
+  margin-top: 50px;
+  font-size: 53px;
+  font-weight: 600;
+}
+#section2 h2 {
+  margin-top: 13px;
+}
+#section2 button {
+  padding: 12px 20px;
+  border-radius: 50px;
+  z-index: 55;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}

@@ -1,0 +1,146 @@
+/* div{
+    height: 300px;
+    width: 300px;
+    border: 5px solid;
+    border-radius: 100%;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: ease all 4s;
+}
+img:hover{
+    transform: scale(4);
+    cursor: pointer;
+}
+*/
+
+div{
+    height: 300px;
+    width: 300px;
+    border: 3px solid pink;
+    animation-name: demo;
+    animation: demo 1s  3s infinite alternate-reverse ;
+    /* animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+} 
+/* @keyframes demo {
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: black;
+    }
+} */
+ @keyframes demo {
+    0%{
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(60deg);
+    }
+    25%{
+        background-color: green;
+        position: absolute;
+        top: 0;
+        left: 300px;
+        transform: rotate(90deg);
+
+    }
+    50%{
+        background-color: pink;
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        transform: rotate(160deg);
+
+    }
+    75%{
+        background-color: red;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        transform: rotate(90deg);
+
+    }
+    100%{
+        background-color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(250deg);
+
+    }
+    
+    
+ }
+
+
+
+
+
+
+
+
+
+
+ #demo1{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+    z-index: 1;
+    
+ }
+ #demo2{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: green;
+    z-index: 2;
+    
+ }
+ #demo3{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    background-color: black;
+    z-index: 3;
+    
+ }
+ #demo4{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: orange;
+    z-index: 4;
+    
+ }
+ p{
+    position: absolute;
+    top: 400px;
+    /* opacity: 0.3; */
+
+ }
+ img{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 400px;
+    opacity: 0.3;
+    /* z-index: -1; */
+    
+
+ }

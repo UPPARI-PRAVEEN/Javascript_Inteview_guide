@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>Feed Back Form</legend>
+        <form action="">
+          <h1>My FeedBack form</h1>
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </li>
+            <li>
+              <label for="Email">Email</label>
+              <input type="Email" id="Email" name="Email" />
+            </li>
+            <li>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </li>
+
+            <li>
+            
+                <label for="habit">Please check all the emotion that apply to You
+                    <ul>
+                    <li><label for="habit">Very Satisfied</label><input type="checkbox" id="habit" name="habit" /></li>
+                  <li><label for="habit">Satisfied</label><input type="checkbox" id="habit" name="habit" /></li>
+                  <li><label for="habit">Didnot Care</label><input type="checkbox" id="habit" name="habit" /></li>
+                  <li><label for="habit">Ambivalent</label><input type="checkbox" id="habit" name="habit" /></li>
+                  </label>
+             </ul>
+              
+            </li>
+            <li>How satisfied were you with our server
+                <ul>
+                    <li><label for="ser">Very Satisfied</label><input type="radio" name="ser"></li>
+                    <li><label for="ser">Satisfied</label><input type="radio" name="ser"></li>
+                    <li><label for="ser">Didn't care</label><input type="radio" name="ser"></li>
+                    <li><label for="ser">Dissatisfied</label><input type="radio" name="ser"></li>
+                    
+                </ul>
+            </li>
+            <li><label for="msg">Further commens</label><textarea name="" id="" cols="30" rows="10"></textarea></li>
+          </ul>
+        </form>
+      </fieldset>
+    </div>
+    <style>
+      .container {
+        margin: 0;
+        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      fieldset {
+        background-color: white;
+        width: 500px;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      form {
+        align-items: center;
+      }
+      label {
+        font-size: 1.3rem;
+      }
+    </style>
+  </body>
+</html>

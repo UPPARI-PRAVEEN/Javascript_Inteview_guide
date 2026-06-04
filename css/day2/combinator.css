@@ -1,0 +1,17 @@
+
+/* desendent selector ----> direct and indirect */
+div h1{
+    background-color: pink;
+}
+/* child selector ---> target  */
+div >h1 {
+    background-color: red;
+}
+/* adjacent selector */
+div >h1+h1{
+    background-color: brown;
+}
+/* general sibling selector */
+div > h1 ~h1{
+    background-color: blue;
+}

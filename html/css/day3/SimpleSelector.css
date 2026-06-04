@@ -1,0 +1,30 @@
+#demo1{
+    background-color: red;
+}
+#demo2{
+    background-color: pink;
+    text-decoration: underline;
+}
+#demo3{
+    background-color: yellow;
+}
+.demo{
+    background-color: orangered;
+}
+.demo1{
+    background-color: blue;
+    text-align: center;
+}
+h4{
+    background-color: sienna;
+}
+#demo1, .demo1, div{
+    padding: 30px;
+    border: 3px solid black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: green;
+}

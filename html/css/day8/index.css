@@ -1,0 +1,51 @@
+h1{
+
+}
+p{
+    color: red;
+    text-indent: 100px;
+     /* text-transform: uppercase; */
+     
+     /* text-transform: capitalize; */
+     /* text-transform: lowercase;*/
+     /* text-decoration: underline; */
+     /* text-decoration: overline; */
+     /* text-decoration: line-through; */
+     /* letter-spacing: 10px; */
+     /* line-height: 30px; */
+     /* word-spacing: 20px; */
+     /* text-emphasis: "🙌"; */
+     /* text-decoration-line: underline; */
+     /* text-decoration-color: green; */
+     /* text-decoration-style: wavy; */
+     /* text-decoration-style: dotted; */
+
+
+
+
+}
+h1{
+    border: 2px solid red;
+    height: 300px;
+    width: 300px;
+    /* overflow: hidden; */
+    overflow: scroll;
+    /* overflow: visible; */
+    /* resize: horizontal; */
+    /* resize: vertical; */
+    text-wrap: nowrap;
+    resize: both;
+    /* text-overflow: ellipsis;to represent the contect in three dotes */
+
+}
+body{
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+    /* height: 100vh; */
+    /* overflow-y: hidden; */
+}
+p{
+    height: 100vh;
+    width: 150%;
+    overflow-x: hidden;
+}

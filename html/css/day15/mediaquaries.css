@@ -1,0 +1,65 @@
+ 
+div{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (min-width: 100px) and (max-width: 250px){
+    div{
+        background-color: red;
+        
+    }
+    div h1{
+        font-size: 15px;
+        color: yellow;
+    }
+}
+
+@media (min-width: 251px) and (max-width: 550px){
+    div{
+        background-color: pink;
+        
+    }
+    div h1{
+        font-size: 15px;
+        color: orange;
+    }
+}
+@media (min-width: 550px) and (max-width: 720px){
+    div{
+        background-color: blue;
+        
+    }
+    div h1{
+        font-size: 15px;
+        color: yellow;
+    }
+}
+@media (min-width: 721px) and (max-width: 1120px){
+    div{
+        background-color: green;
+        
+    }
+    div h1{
+        font-size: 15px;
+        color: yellow;
+    }
+}
+@media (min-width: 1121px) and (max-width: 1500px){
+    div{
+        background-color: aquamarine;
+        
+    }
+    div h1{
+        font-size: 15px;
+        color: yellow;
+    }
+}
+
+
+
+

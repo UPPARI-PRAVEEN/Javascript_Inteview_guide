@@ -1,0 +1,41 @@
+div{
+    border: 5px solid  red;
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    /* transition: height 5s,width 5s; */
+    transition-duration: 5s;
+    /* transition-delay: 3s; */
+    /* transition: height,width; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    
+
+
+
+
+    
+}
+div:hover{
+    height: 600px;
+    width: 600px;
+    background-color: yellow;
+
+    /* transform: translate(300px,400px); */
+    /* transform: translateY(100px); */
+    /* transform: translateX(100px); */
+    /* transform: rotate(-55deg); */
+    /* transform: rotateX(64deg); */
+    /* transform: rotateY(64deg); */
+    /* transform: scale(3,3); */
+    /* transform: scaleX(3); */
+    /* transform: scaleY(4) */
+    /* transform: skew(250deg,360deg); */
+    /* transform: skewX(3deg); */
+    /* transform: skewY(4deg); */
+
+    
+}

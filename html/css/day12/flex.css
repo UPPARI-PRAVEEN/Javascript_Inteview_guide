@@ -1,0 +1,25 @@
+ol{
+    border: 2px solid;
+    padding: 0;
+    list-style: none;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* height: 90vh; */
+    /* align-items: center; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* display: none; */
+    /* visibility: hidden; */
+
+}
+ol li{
+    border: 2px solid red;
+    padding: 5px;
+    margin: 3px;
+    height: 80px;
+    width: 80px;
+}

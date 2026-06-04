@@ -1,0 +1,43 @@
+#demo{
+    border: 2px solid;
+    height: 90vh;
+    /* background-image: linear-gradient(red,green,yellow,blue); */
+    background-image: linear-gradient(to left,rgb(192, 97, 97),rgb(98, 188, 98),rgb(210, 210, 138),rgb(164, 164, 216));
+    /* to right, to top*/
+}
+#demo2{
+    height: 80vh;
+    border: 2px solid;
+    background-image: radial-gradient(blue,pink,purple,orange);
+}
+#demo3{
+    height: 80vh;
+    border: 2px solid;
+    background-image: radial-gradient(circle,rgb(28, 28, 158),pink,rgb(207, 153, 207),rgb(204, 178, 129));
+}
+#demo4{
+    height: 80vh;
+    border: 2px solid;
+    background-image: radial-gradient(circle farthest-corner at 60% 60%,rgb(28, 28, 158),pink,rgb(246, 11, 246),rgb(204, 178, 129));
+}
+
+#demo5{
+    height: 80vh;
+    border: 2px solid;
+    background-image: radial-gradient(circle closest-corner at 60% 60%,rgb(28, 28, 158),pink,rgb(246, 11, 246),rgb(204, 178, 129));
+}
+#demo6{
+    height: 80vh;
+    border: 2px solid;
+    background-image: radial-gradient(circle  farthest-side at 60% 60%,rgb(28, 28, 158),pink,rgb(246, 11, 246),rgb(204, 178, 129));
+}
+#demo7{
+    height: 80vh;
+    border: 2px solid;
+    background-image: radial-gradient(circle  closest-side at 60% 60%,rgb(28, 28, 158),pink,rgb(246, 11, 246),rgb(204, 178, 129));
+}
+#demo8{
+    border: 2px solid;
+    height: 70vh;
+    background-image: conic-gradient(red,green,blue,pink) !important;
+}

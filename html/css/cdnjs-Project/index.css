@@ -1,0 +1,100 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "ubuntu" sans-serif;
+}
+.main{
+    height: 95vh;
+    width: 100%;
+    background-color: #454647;
+    background-size: cover;
+    overflow: hidden;
+}
+.nav{
+    height: 80px;
+    /* border: 3px solid red; */
+    position: absolute;
+    background-color: #343535;
+    top: 0;
+    width: 100%;
+}
+.sub-nav{
+    /* border: 3px solid green; */
+   height: inherit;
+   width: 95%;
+   margin: auto;
+   display: flex;
+    justify-content: space-between;
+
+}
+.sub-nav ol{
+    /* border: 3px solid pink; */
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    list-style: none;
+    /* margin-top: -40px; */
+}
+.image{
+    height: 150px;
+    width: 150px;
+}
+.ic{
+    color: aliceblue;
+    fill: white;
+}
+.sub-nav ul{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.sub-nav ul li{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.hero{
+    position: absolute;
+   top: 8rem;
+   left: 14rem;
+   line-height: 30px;
+    flex-direction: column;
+}
+.hero>h1{
+    color: white;
+    font-size: 3rem;
+    line-height: 50px;
+}
+.hero>p{
+    color: white;
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+.hero>h2{
+    color: white;
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+div>form{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+input[type="search"]{
+    border: none;
+    width: 46rem;
+    font-size: 1.4rem;
+
+}
+div>form>button{
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    background-color: white;
+}

@@ -1,0 +1,142 @@
+#section3{
+    height: 259vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+#section3 div{
+    /* border: 2px solid yellow; */
+    height: 32.45%;
+    width: 48.8%;
+    cursor: pointer;
+    text-align: center;
+    /* line-height: 45px; */
+}
+#section3 div:first-child, #section3 div:nth-child(3), #section3 div:last-child{
+    background-color: #f5f5f7;
+}
+#section3 div:first-child{
+    background-image: url("../assets/sec3img1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom+25px;
+    background-size: 19em;
+}
+#section3 div:nth-child(2){
+    background-color: #000;
+    background-image: url("../assets/sec3img2.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+#section3 div:nth-child(3){
+    background-image: url("../assets/sec3img3.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+#section3 div:nth-child(4){
+    background-color: #fafafa;
+    background-image: url("../assets/sec3img4.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+#section3 div:nth-child(5){
+    background-image: url("../assets/sec3img5.png"),linear-gradient(to bottom, #addaed, #f1f5f6);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    /* background-size: 19em; */
+}
+#section3 div:last-child{
+    background-image: url("../assets/sec3img6.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+#section3 button{
+    display: inline-block;
+    margin: 0 0;
+    padding: 9px 17px;
+    font-size: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#section3 div button:first-of-type{
+    border: none;
+    background-color: #0071e3;
+    color: #fff;
+    font-weight: 400;
+}
+#section3 div button:last-of-type{
+    border: 2px solid #0071e3;
+    color: #0071e3;
+    padding: 8px 17px;
+    background-color: transparent;
+    font-weight: 400;
+}
+#section3 div h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+#section3 div h2{
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 6px;
+    color: #454547; 
+}
+#section3 div button:first-of-type:hover{
+    background-color: #0077ed;
+}
+#section3 div button:last-of-type:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
+#section3 div:nth-child(2), #section3 div:nth-child(2) h2{
+    color: #fff;
+}
+#section3 div:nth-child(2) h1{
+    margin-top: 60px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+#section3 div:nth-child(2) h1 i{
+    font-size: 35px;
+    color: #fff;
+}
+#section3 div:nth-child(2) h4{
+    color: #f00;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 3px;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+#section3 div:nth-child(3) h4{
+    color: #76767b;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+sup{
+    font-size: 8px;
+}
+#section3 div:nth-child(5) h2{
+    color: #1d1d1f;
+}
+#section3 div:nth-child(5) button:first-of-type{
+    background-color: #1d1d1f;
+}
+#section3 div:nth-child(5) button:last-of-type{
+    color: #1d1d1f;
+    border: 2px solid #1d1d1f;
+}
+#section3 div:nth-child(5) button:first-of-type:hover{
+    background-color: #272729;
+}
+#section3 div:nth-child(5) button:last-of-type:hover{
+    background-color: #1d1d1f;
+    color: #fff;
+}

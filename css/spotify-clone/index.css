@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+
+    
+}
+.image-container{
+    margin-left: 14rem;
+    display: flex;
+  
+    align-items: center;
+}
+
+.image-container>img{
+    height: 40px;
+    width: 40px;
+    background-color: aliceblue;
+    margin-top: 10px;
+}
+.image-container>span{
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 10px;
+    
+}
+
+.nav-container{
+    display: flex;
+    margin-left: 40rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav-container>div{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+    
+.hero{
+    height: 80vh;
+    margin-left: -40px;
+    background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
+}
+.hero>svg{
+    height: 600px;
+    width: 400px;
+    margin-top: 7rem; 
+    margin-left: 190px;
+}
+.images{
+    margin-top: -200px;
+}
+.hero>img{
+    position: absolute;
+    height: 420px;
+    width: 260px;
+     margin-left: -330px; 
+     margin-top: 13rem; 
+    top: 2rem;
+    
+    overflow: hidden;
+}
+.hero-side{
+    margin-left: 50rem;
+    margin-top: -30rem;
+}
+.hero-side>h1{
+    font-weight: 900;
+    color: white;
+    line-height: 50px;
+    font-size: 4rem;
+}
+.hero-button{
+    margin-top: 80px;
+
+}
+.hero-button>a{
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));;
+    
+}
+.why{
+    height: 70vh;
+    background-color: white;
+}
+.why-head>h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.why-body{
+    
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+.why-body>div{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 270px;
+    width: 200px;
+}
+.why-body>div>img{
+    height: 150px;
+    width: 150px;
+}
+.why-body>div>h4{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.why-body>div>p{
+    margin-top: 15px;
+}
+.free{
+    height: 70vh;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.free>h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+   
+}
+.question{
+    height: 70vh;
+    background-color: white;
+}
+.question>h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+   margin-left: 15rem;
+    
+}
+.drop>li{
+    display: flex;
+   padding: 20px;
+   margin-right: 17rem;
+}
+.drop>li>p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+.drop>li:hover{
+    background-color: rgb(226, 218, 218);
+}
+.drop>li>div>svg{
+    height: 20px;
+    width: 20px;
+    
+}
+.svg{
+    margin-left: 40rem;
+}
+.svg1{
+    margin-left: 35rem;
+}
+.svg2{
+    margin-left: 33.5rem;
+}
+.svg3{
+    margin-left: 40rem;
+}
+.frees{
+    height: 60vh;
+    font-size: 3rem;
+    
+    color: white;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
+
+}
+.hero-button1{
+    margin-top: 1rem;
+}
+.hero-button1>a{
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    margin-top: 2rem;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));;
+    
+}
+.footers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    height: 75vh;
+    background-color: black;
+    padding-top: 5rem;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+.extra{
+    margin-top: 2rem;
+    
+}
+.image-container{
+    margin-top: -24rem;
+    margin-right: 4rem;
+}
+
+.footer-column>h6{
+    color: white;
+    font-weight: 700;
+    
+        color: #919496;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 1.4;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+
+}
+.footer-column{
+
+}
+.footer-column>p{
+    color: white;
+    font-weight: 500;
+}
+.footer-column>svg{
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 30px;
+    background-color: white;
+   gap: 30px;
+   padding: 0px;
+    
+}

@@ -1,0 +1,33 @@
+/* #demo{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    left: 300px;
+    background-color: red;
+    color: red;
+    /* left will not work */
+/* } */ 
+#demo1{
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 600px;
+    left: 300px;
+}
+#demo2{
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+#demo3{
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}

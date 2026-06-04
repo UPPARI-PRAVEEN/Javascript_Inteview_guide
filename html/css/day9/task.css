@@ -1,0 +1,32 @@
+div{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/6678e2ea-85e8-4db2-b440-c36547313109/IN-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_3457a8b1-284d-4bb5-979e-2a2e9bb342b3_small.jpg");
+/* / */
+  
+    /* background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+}
+h2{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+p{
+    color: white;
+}

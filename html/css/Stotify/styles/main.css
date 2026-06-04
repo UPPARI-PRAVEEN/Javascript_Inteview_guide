@@ -1,0 +1,296 @@
+
+
+#section1{
+    height: 78vh;
+    /* border: 2px solid red; */
+    background-image:url("../assets/bubbles-dktp\ \(1\).svg"), linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+#section1 span svg{
+   
+    
+    height: 503px;
+    width: 800px;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    overflow: hidden;
+}
+#section1 img{
+    height: 408px;
+    width: 227px;
+    position: absolute;
+    left: 285px;
+    top: 250px;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+#section1 div{
+    position: absolute;
+    left: 40rem;
+    top: 19rem;
+}
+#section1 div h1{
+    font-size: 4rem;
+    color: white;
+}
+#section1 div button{
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.why{
+    height: 70vh;
+    border: 2px solid;
+    background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.why h1{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+#why-main{
+  
+    height: 50vh;
+    
+}
+#why-subs{
+   
+    height: inherit;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+#why-subs div img{
+    height: 150px;
+    width: 150px;
+    
+}
+#why-subs>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+   
+    width: 300px;
+   gap: 10px;
+}
+#why-subs>div h4{
+    font-weight: 600;
+}
+
+.free{
+    height: 70vh;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.free>h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+   
+}
+
+.frees{
+    height: 60vh;
+    font-size: 3rem;
+    
+    color: white;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
+
+}
+.hero-button1{
+    margin-top: 1rem;
+}
+.hero-button1>a{
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    margin-top: 2rem;
+    font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));;
+    
+}
+.footers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    height: 75vh;
+    background-color: black;
+    padding-top: 5rem;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+/* .extra{
+    margin-top: 2rem;
+    
+} */
+/* .image-container{
+    margin-top: -24rem;
+    margin-right: 4rem;
+} */
+
+#drop{
+    height: 87vh;
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+}
+#drop h1{
+    padding-top: 3rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+.sub-drop{
+    padding-top: 3rem;
+}
+.du{
+    padding: 20px;
+    
+    border-bottom: 1px solid rgb(213, 213, 213);
+    width: 70rem;
+}
+.du:hover{
+   padding: 20px;
+    background-color: #e5e5e5;
+    
+}
+
+
+.du p{
+    padding-top: 10px;
+}
+.du ol{
+    padding-left: 20px;
+    padding: 10px;
+
+}
+.du ol li{
+   line-height: 25px;
+    font-size: 1.1rem;
+}
+.su{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    height: inherit;
+    
+
+}
+.svg-icon{
+  font-weight: 600;
+   font-size: 2rem;
+
+   
+}
+.su:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footers{
+    background-color: black;
+}
+
+.footer-column>h6{
+    color: white;
+    font-weight: 700;
+    
+        color: #919496;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 1.4;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+
+}
+.image-container svg{
+    color: white;
+    fill: white;
+    width: 8.5em;
+    margin-left: 10rem;
+}
+.footer-column{
+    background-color: black;
+
+}
+.footer-column>p{
+    color: white;
+    font-weight: 500;
+}
+.footer-column>svg{
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 30px;
+    background-color: white;
+   gap: 30px;
+   padding: 0px;
+    
+}
+.last{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  
+   background-color: black;
+
+}
+.last ol{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    margin-left: 4rem;
+    padding: 2rem;
+
+}
+.last ol li{
+    color: white;
+    font-size: 0.8rem;
+}

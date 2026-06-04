@@ -1,0 +1,85 @@
+footer{
+    /* border: 2px solid red; */
+    height: 120vh;
+    width: 100%;
+    background-color: #000;
+}
+#sub-footer{
+    height: 120vh;
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid green; */
+    margin-top: 60px;
+    color: #fff;
+}
+#sub-footer div{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    width: 80%;
+}
+#sub-footer div ol{
+    list-style: none;
+    line-height: 35px;
+}
+#sub-footer div ol>li{
+    font-size: 20px;
+}
+#sub-footer div ol>li+li{
+    font-size: 15px;
+    cursor: pointer;
+}
+#sub-footer div ol>li+li:hover{
+    color: rgb(255, 255, 255,0.5);
+}
+#sub-footer div+div{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 50px;
+}
+#sub-footer div+div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#sub-footer div+div ul+ul{
+    width: 20%;
+}
+#sub-footer div+div ul li{
+    box-sizing: border-box;
+    padding: 7px 10px;
+}
+#sub-footer div+div ul li:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255,0.2);
+}
+#sub-footer figure{
+    width: 150px;
+    display: flex;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#sub-footer article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+    height: 80px;
+}
+#sub-footer article ol{
+    list-style: none;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    cursor: pointer;
+}
+#sub-footer article ol li:hover{
+    color: rgb(255, 255, 255,0.5);
+}

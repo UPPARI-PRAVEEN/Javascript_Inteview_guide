@@ -1,0 +1,8 @@
+@import url('./external3.css');
+
+section{
+    height: 80vh;
+    background-color: rgb(136, 62, 62);
+    font-size: 2rem;
+    color: white;
+}

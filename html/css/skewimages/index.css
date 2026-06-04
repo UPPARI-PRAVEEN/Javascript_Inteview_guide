@@ -1,0 +1,28 @@
+.cus {
+    width: 100%;
+    position: relative;
+    
+}
+
+#skew {
+    background-color: red;
+    z-index: 3;
+    height: 80vh; /* Added height for visibility */
+}
+
+.cus::after {
+    position: absolute;
+    width: 100%; /* Changed from inherit to 100% for consistency */
+    height: 100%; /* Changed from inherit to 100% for consistency */
+    background-color: inherit;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+}
+
+#skew::after {
+    transform-origin: right bottom;
+    transform: skewY(-6deg);
+    width: 100%; /* Ensures pseudo-element covers full width */
+    height: 100%; /* Ensures pseudo-element covers full height */
+}

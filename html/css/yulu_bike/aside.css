@@ -1,0 +1,67 @@
+@import url(./main.css);
+aside{
+    width: 100%;
+    height: 140vh;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    position: relative;
+}
+aside>h1{
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    /* display: inline; */
+    font-size: 50px;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+    /* border: 2px solid blue; */
+    margin-left: 100px;
+}
+#container video{
+    margin-top:150px ;
+}
+#container video+div{
+    height: 600px;
+    width: 400px;
+    cursor: pointer;
+    /* border: 5px solid green; */
+}
+#container video+div div h1{
+    font-size: 20px;
+}
+#container video+div div{
+    height: 120px;
+    width: 400px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* border: 2px solid; */
+    padding: 20px;
+    margin-top: 20px;
+}
+#container video+div div img{
+    height:40px;
+}
+#container video+div div span{
+    /* border: 2px solid red; */
+    width: 320px;
+    padding: 10px;
+}
+aside figure {
+    height: 100%;
+    width: 450px;
+    position:absolute;
+    top:0px;
+    right: 0px;
+    /* border: 2px solid yellow; */
+}
+aside figure img{
+    height: 100%;
+    width: 100%;
+}
+#container video+div div h1:hover{
+    color: #00dcf7;
+}

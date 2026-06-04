@@ -1,0 +1,9 @@
+@import url('./external2.css');
+
+footer{
+    height: 50px;
+    background-color: black;
+    color: #FFF;
+    font-size: 2rem;
+
+}

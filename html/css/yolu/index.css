@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    height: 100vh;
+   
+   overflow: hidden;
+    background-color: red;
+
+}
+.back video{
+    
+   
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+}
+.nav ol{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+   
+    width: 47rem;
+    
+}
+.nav span{
+    margin-left: 10rem;
+}
+.nav ol li{
+    font-size: 1.2rem;
+}
+#down{
+    background-color: aqua;
+    padding: 18px
+
+}
+.hero{
+   position: absolute;
+    top: 24rem;
+    left: 15rem;
+    line-height: 40px;
+}
+.hero h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+}
+.hero p{
+    color: white;
+    font-weight: 800;
+}
+
+.hero button{
+    padding: 20px 40px;
+    letter-spacing: 6px;
+    background-color: aqua;
+}
+
+
+.yulu{
+    display: flex;
+    height: 110vh;
+    
+}
+.yulu1{
+    
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yulu1 video{
+    height: 500px;
+    width: 450px;
+}
+.yulu2{
+    
+    width: 400px;
+
+}
+.yulu2 h1{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 30px;
+}
+.yulu2 img{
+    height: 700px;
+    width: 100%;
+}
+.yulu3{
+    
+    width: 530px;
+    background: url(https://yulu-blogs-cdn.yulu.bike/Home_image_edit2_f070768f43.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.scooty{
+    height: 100vh;
+   
+    background-color: #d7e0ea;
+       
+    background: url("https://yulu-blogs-cdn.yulu.bike/detils_image_657dc7d5ce.png");
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    background-size: 400px;
+    background-color: #d7e0ea;
+    position: relative;
+    z-index: -1;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.scooty ol{
+    display: flex;
+    position: relative;
+    width: 600px;
+    justify-content: space-between;
+    top: 100px;
+    left: 250px;
+    list-style: none;
+}
+.scooty ol{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #7e8daa;
+}
+.scooty p{
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    color: white;
+}
+.scooty button{
+    position: absolute;
+    top: 290px;
+    left: 250px;
+    padding: 20px;
+    background-color: aqua;
+}
+.img-con{
+    position: relative;
+    top: 0rem;
+    left: 30rem;
+}
+.tab-name-wrapper{
+    z-index: -1;
+}
+.scr{
+    height: 90vh;
+
+}
+.scr img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+footer{
+    height: 90vh;
+    background-color: #071228;
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-between;
+    position: absolute;
+    padding-left: 14rem;
+    padding-top: 4rem;
+   width: 100%;
+}
+.foot2 p{
+    color: white;
+    line-height: 50px;
+}
+.foot5 p{
+    color: white;
+    padding: 10px;
+}
+.subfoot{
+    display: flex;
+
+}
+.subfoot img{
+    margin: 5px;
+}
+.foot6{
+    padding-right: 6rem;
+    padding-top: 2.7rem;
+}

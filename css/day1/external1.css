@@ -1,0 +1,9 @@
+@import url('./external2.css');
+
+nav{
+    background-color: orange;
+    height: 50px;
+    color: white;
+    font-size: 2rem;
+
+}

@@ -1,0 +1,61 @@
+/* h1:first-child{
+    background-color: red;
+} */
+/* h1:last-child{
+    background-color: royalblue;
+} */
+/* h1:nth-child(3){
+    background-color: yellow;
+} */
+
+/* h1:first-of-type{
+    background-color: red;
+}
+h1:last-of-type{
+    background-color: rebeccapurple;
+} */
+
+ol  {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    list-style: none;
+    padding: 10px;
+
+}
+ol li:first-child a{
+    text-decoration: none;
+    color: white;
+}
+ol li:first-child a:hover{
+    color: red;
+    box-shadow: 0 0 20px orange;
+    padding: 3px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+ol li:last-child a{
+    text-decoration: none;
+    color: white;
+}
+ol li:last-child a:hover{
+    color: red;
+    box-shadow: 0 0 20px orange;
+    padding: 3px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+ol li:nth-child(2) a{
+    text-decoration: none;
+    color: white;
+    
+}
+ol li:nth-child(2) a:hover{
+    color: red;
+    box-shadow: 0 0 20px orange;
+    padding: 3px;
+    background-color: azure;
+    border-radius: 5px;
+    
+}

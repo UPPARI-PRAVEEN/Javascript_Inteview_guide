@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" >
+      <div>
+        <div>
+          <a href="https://pixabay.com/" target="_blank">
+            <!-- Relative path-->
+            <img
+              src="./Assets/p1.jpeg"
+              alt="img"
+              height="400"
+              width="400"
+              title="Click for more images"
+            />
+            <!-- absulte path path-->
+    
+            <img
+              src="https://cdn.pixabay.com/photo/2023/11/08/23/57/flower-8376030_1280.jpg"
+              alt="my-imge"
+              height="400"
+              width="400"
+              title="hey it is done with absulete path (externalpath)"
+            />
+            <img
+            src="./Assets/p1.jpeg"
+            alt="img"
+            height="400"
+            width="400"
+            title="hey it is done with relative path (inlinepath)"
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2023/11/08/23/57/flower-8376030_1280.jpg"
+            alt="my-imge"
+            height="400"
+            width="400"
+            title="hey it is done with absulete path (externalpath)"
+          />
+          <img
+          src="./Assets/p1.jpeg"
+          alt="img"
+          height="400"
+          width="400"
+          title="hey it is done with relative path (inlinepath)"
+        />
+    
+        <img
+          src="https://cdn.pixabay.com/photo/2023/11/08/23/57/flower-8376030_1280.jpg"
+          alt="my-imge"
+          height="400"
+          width="400"
+          title="hey it is done with absulete path (externalpath)"
+        />
+          </a>
+    <a href="./regiter.html">click for register</a><br>
+    <a href="./login.html">click for login</a><br>
+    <a href="./home.html">click for home</a><br>
+        </div>
+      </div>
+          </div>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            /* margin-left: 20px; */
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        img{
+            border-radius: 10px;
+            box-shadow: 0 0  20px ;
+            margin: 20px;
+            cursor: pointer;
+            
+        }
+        img:hover{
+            box-shadow: 0 0 20px red;
+        }
+    </style>
+  </body>
+</html>

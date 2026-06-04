@@ -1,0 +1,35 @@
+*{
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: 5px;
+    
+}
+body{
+    background-color: azure;
+    margin: 20px;
+}
+#web1{
+    background-color: blueviolet;
+    box-shadow: 0 0 10px black;
+}
+#web2{
+    background-color: brown;
+    box-shadow: 0 0 10px black;
+}
+div{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+
+}
+.html{
+    background-color: yellow;
+    
+}
+section,h3{
+    background-color: pink;
+    box-shadow: 0 0 10px black;
+}

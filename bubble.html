@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bubble Math Game</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    text-align:center;
+    background: linear-gradient(120deg,#00c6ff,#0072ff);
+    color:white;
+}
+
+h1{
+    margin-top:20px;
+}
+
+#game{
+    margin-top:60px;
+}
+
+.bubble{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    margin:20px;
+    cursor:pointer;
+    background:white;
+    color:black;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.bubble:hover{
+    transform:scale(1.1);
+}
+
+#score{
+    font-size:22px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Bubble Math Game</h1>
+
+<div id="score">
+Score : 0 | Round : 1 / 25
+</div>
+
+<div id="game"></div>
+
+<script>
+
+let score=0
+let round=1
+let answers=[]
+let clickIndex=0
+let timeLeft=30
+let timerInterval
+let lives=3
+
+function random(min,max){
+    return Math.floor(Math.random()*(max-min+1))+min
+}
+
+function generateQuestion(){
+
+    let caseType=random(1,5)
+
+    let a,b,question,answer
+
+    if(caseType==1){
+        let ops=["+","-","*","/","%"]
+        let op=ops[random(0,4)]
+
+        a=random(1,20)
+        b=random(1,10)
+
+        question=a+op+b
+
+        if(op=="+") answer=a+b
+        if(op=="-") answer=a-b
+        if(op=="*") answer=a*b
+        if(op=="/") answer=parseFloat((a/b).toFixed(2))
+        if(op=="%") answer=a%b
+    }
+
+    else if(caseType==2){
+        a=random(0,50)
+        b=random(0,50)
+        question=a+"+"+b
+        answer=a+b
+    }
+
+    else if(caseType==3){
+        a=(Math.random()*0.9).toFixed(1)
+        b=random(0,10)
+        question=a+"*"+b
+        answer=(a*b).toFixed(2)
+    }
+
+    else if(caseType==4){
+        a=random(0,10)
+        b=random(1,10)
+        question=a+"%"+b
+        answer=a%b
+    }
+
+    else if(caseType==5){
+        a=random(1,50)
+        b=random(1,15)
+        question=a+"/"+b
+        answer=(a/b).toFixed(2)
+    }
+
+    return {question,answer:parseFloat(answer)}
+}
+
+function startRound(){
+
+    if(round>25){
+        clearInterval(timerInterval);
+        alert("Game Over! Final Score: "+score)
+        return
+    }
+
+    answers=[]
+    clickIndex=0
+    timeLeft=30
+
+    let game=document.getElementById("game")
+    game.innerHTML=""
+
+    document.getElementById("score").innerText=
+    "Score : "+score+" | Round : "+round+" / 25 | Time: "+timeLeft+" | Lives: "+lives+" | Lives: "+lives
+
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        document.getElementById("score").innerText=
+        "Score : "+score+" | Round : "+round+" / 25 | Time: "+timeLeft+" | Lives: "+lives
+        if(timeLeft <= 0){
+            clearInterval(timerInterval);
+            lives--;
+            if(lives <= 0){
+                alert("Game Over! Time ran out. Final Score: "+score);
+                return;
+            }
+            round++;
+            document.getElementById("score").innerText=
+            "Score : "+score+" | Round : "+round+" / 25 | Lives: "+lives
+            setTimeout(startRound,800)
+        }
+    }, 1000);
+
+    let arr=[]
+
+    for(let i=0;i<3;i++){
+        let q=generateQuestion()
+        arr.push(q)
+    }
+
+    answers=arr.map(x=>x.answer).sort((a,b)=>a-b)
+
+    arr.forEach(q=>{
+
+        let div=document.createElement("div")
+        div.className="bubble"
+        div.innerText=q.question
+
+        div.dataset.answer=q.answer
+
+        div.onclick=function(){
+
+            let val=parseFloat(this.dataset.answer)
+
+            if(val===answers[clickIndex]){
+                this.style.background="lightgreen"
+                clickIndex++
+
+                if(clickIndex==3){
+                    clearInterval(timerInterval);
+                    score++
+                    round++
+
+                    document.getElementById("score").innerText=
+                    "Score : "+score+" | Round : "+round+" / 25 | Lives: "+lives
+
+                    setTimeout(startRound,800)
+                }
+            }
+            else{
+                clearInterval(timerInterval);
+                this.style.background="red"
+                lives--;
+                if(lives <= 0){
+                    alert("Game Over! Wrong answer. Final Score: "+score);
+                    return;
+                }
+                round++
+                document.getElementById("score").innerText=
+                "Score : "+score+" | Round : "+round+" / 25 | Lives: "+lives
+                setTimeout(startRound,800)
+            }
+        }
+
+        game.appendChild(div)
+
+    })
+
+}
+
+startRound()
+
+</script>
+
+</body>
+</html>

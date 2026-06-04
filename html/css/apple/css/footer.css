@@ -1,0 +1,82 @@
+#main-footer {
+  background-color: #f5f5f7;
+  color: #858586;
+  font-size: 12px;
+}
+#sub-footer {
+  width: 64%;
+  margin: auto;
+}
+#sub-footer section {
+  border-bottom: 1px solid #858586;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#sub-footer section:first-child {
+  line-height: 18px;
+}
+#sub-footer section:first-child p + p {
+  margin-top: 12px;
+}
+#sub-footer section:first-child p span {
+  color: #444445;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#sub-footer section:nth-child(2) div:first-child{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: column;
+  height: 56vh;
+}
+#sub-footer ol {
+  list-style: none;
+  margin-bottom: 15px;
+}
+#sub-footer ol li:first-child {
+  color: #1e1e1e;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+#sub-footer ol li + li {
+  margin-bottom: 12px;
+}
+#sub-footer ol li + li a {
+  color: #5e5e5f;
+  text-decoration: none;
+}
+#sub-footer ol li + li a:hover {
+  text-decoration: underline;
+}
+#sub-footer section:nth-child(2) div:nth-child(2) span{
+    color: #0e6ecf;
+    cursor: pointer;
+}
+#sub-footer section:nth-child(2) div:nth-child(2){
+    margin-top: 25px;
+}
+#sub-footer section:nth-child(2) div:nth-child(2) span:hover{
+    text-decoration: underline;
+}
+#sub-footer section:nth-child(2) div:nth-child(2){
+    letter-spacing: 0.03em;
+}
+#sub-footer section:last-child span span:first-child{
+    letter-spacing: 0.03em;
+}
+#sub-footer section:last-child span span:nth-child(2) a{
+    color: #6b6b6c;
+    text-decoration: none;
+    word-spacing: 2px;
+}
+#sub-footer section:last-child span span:nth-child(2) a:hover{
+    text-decoration: underline;
+}
+#sub-footer section:last-child span span:nth-child(2){
+    margin-left: 30px;
+    margin-right: 304px;
+}
+#sub-footer section:last-child{
+    border-bottom: none;
+}
