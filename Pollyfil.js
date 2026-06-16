@@ -41,3 +41,33 @@ let doubled = arr.myMap((item, index) => {
 });
 
 console.log("Returned Array:", doubled);
+
+
+
+
+const arr = [1, 2, 3, 4];
+
+Array.prototype.myReduce = function (callBack, initialValue) {
+    // 1. Determine if initialValue was passed
+    // If no initialValue is provided, accumulator defaults to the first element
+    let accumulator = initialValue !== undefined ? initialValue : this[0];
+    
+    // 2. Determine where the loop should start
+    // If no initialValue is provided, we start looping from the second element (index 1)
+    let startIndex = initialValue !== undefined ? 0 : 1;
+
+    // 3. Loop through the array
+    for (let i = startIndex; i < this.length; i++) {
+        // Update the accumulator with the result of the callback
+        accumulator = callBack(accumulator, this[i], i, this);
+    }
+
+    // 4. Crucial: Return the final accumulated result!
+    return accumulator;
+};
+
+// Testing the code
+const result = arr.myReduce((acc, curr) => acc + curr, 0);
+console.log(result); // Output: 10
+
+
