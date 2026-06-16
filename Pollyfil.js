@@ -66,8 +66,8 @@ Array.prototype.myReduce = function (callBack, initialValue) {
     return accumulator;
 };
 
-// Testing the code
 const result = arr.myReduce((acc, curr) => acc + curr, 0);
+
 console.log(result); // Output: 10
 
 
