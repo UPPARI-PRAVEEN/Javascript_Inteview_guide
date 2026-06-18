@@ -102,3 +102,33 @@ console.log(res3)
 myFun()
 
 
+
+function promiseAllSettledFunc(promises){
+    return new Promise((resolve,reject)=>{
+        result = []
+        completed =0
+        promises.forEach((prom,index)=>{
+            Promise.resolve(prom)
+            .then((res)=>{
+                result[index] = res
+                completed++
+
+                if(completed === promises.length){
+                    resolve(result)
+                }
+            })
+            .catch((err)=>{
+                result[index] = err
+                
+
+            })
+            .finally(()=>{
+                if(completed === promises.length){
+                    resolve(result)
+                }
+            })
+        })
+    })
+}
+
+
