@@ -36,3 +36,23 @@ const {re1,res2,res3} = Promise.all([promise,promise2,promise3])
 console.log(re1)
 console.log(res2)
 console.log(res3)
+
+//Promise .all Cleaner version with async await
+async function getData() {
+  try {
+    const [res1, res2, res3] = await Promise.all([
+      myPromise,
+      myPromise1,
+      myPromise2
+    ]);
+
+    console.log(res1);
+    console.log(res2);
+    console.log(res3);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+getData();
+
