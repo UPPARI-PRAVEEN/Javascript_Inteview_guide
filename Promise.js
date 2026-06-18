@@ -37,6 +37,36 @@ console.log(re1)
 console.log(res2)
 console.log(res3)
 
+// / Simulating the fetch locally since the server blocks external web requests
+const localFetch = () => {
+    return new Promise((resolve) => {
+        resolve({
+            json: () => Promise.resolve({ userId: 1, id: 1, title: "delectus aut autem", completed: false })
+        });
+    });
+};
+
+const myPromise = new Promise((resolve, reject) => {
+  localFetch()
+    .then((res) => res.json()) // fix here
+    .then((data) => resolve(data))
+    .catch((err) => reject(err)); // add reject
+});
+
+const myPromise1 = new Promise((resolve, reject) => {
+  localFetch()
+    .then((res) => res.json()) // fix here
+    .then((data) => resolve(data))
+    .catch((err) => reject(err)); // add reject
+});
+
+const myPromise2 = new Promise((resolve, reject) => {
+  localFetch()
+    .then((res) => res.json()) // fix here
+    .then((data) => resolve(data))
+    .catch((err) => reject(err)); // add reject
+});
+
 //Promise .all Cleaner version with async await
 async function getData() {
   try {
