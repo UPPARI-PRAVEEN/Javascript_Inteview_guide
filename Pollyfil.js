@@ -71,3 +71,34 @@ const result = arr.myReduce((acc, curr) => acc + curr, 0);
 console.log(result); // Output: 10
 
 
+
+//Promise.all
+function promiseAllFunc(promises){
+    return new Promise((resolve,reject)=>{
+        result = []
+        completed =0
+        promises.forEach((prom,index)=>{
+            Promise.resolve(prom)
+            .then((res)=>{
+                result[index] = res
+                completed++
+
+                if(completed === promises.length){
+                    resolve(result)
+                }
+            })
+            .catch((err)=> reject(err))
+        })
+    })
+}
+
+async function myFun(){
+const [res1,res2,res3] =await promiseAllFunc([myPromise,myPromise1,myPromise2])
+
+console.log(res1)
+console.log(res2)
+console.log(res3)
+}
+myFun()
+
+
