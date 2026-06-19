@@ -131,4 +131,61 @@ function promiseAllSettledFunc(promises){
     })
 }
 
+//Promise .race
+function promiseAnyFunc(promises){
+    return new Promise((resolve,reject)=>{
+        result = ""
+        rejectCount = 0
+        promises.forEach((prom)=>{
+            Promise.resolve(prom)
+            .then((res)=>{
+                result = res
+                resolve(result)
+            })
+            .catch((err)=> {
+                rejectCount++
+                if(rejectCount === promises.length){
+                    reject("All promises rejected")
+                }
+            })
+        })
+    })
+}
+
+async function myFun(){
+const res=await promiseRaceFunc([myPromise,myPromise1,myPromise2])
+console.log(res)
+// console.log(res1)
+// console.log(res2)
+// console.log(res3)
+}
+myFun()
+
+
+function promiseAnyFunc(promises) {
+  return new Promise((resolve, reject) => {
+    let rejectCount = 0;
+    let errors = [];
+
+    promises.forEach((prom, index) => {
+      Promise.resolve(prom)
+        .then((res) => {
+          resolve(res); // first success wins
+        })
+        .catch((err) => {
+          errors[index] = err;
+          rejectCount++;
+
+          if (rejectCount === promises.length) {
+            reject(new AggregateError(errors, "All promises were rejected"));
+          }
+        });
+    });
+  });
+}
+
+
+
+
+
 
