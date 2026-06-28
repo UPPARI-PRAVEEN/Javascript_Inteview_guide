@@ -51,8 +51,15 @@ let doubled = arr.myMap((item, index) => {
 });
 console.log("Returned Array:", doubled);
 // ****************************************** map method end ************************************ //
-const arr = [1, 2, 3, 4];
 
+// ****************************************** reduce method polyfill ************************************ //
+// explanation: The reduce method executes a reducer function (that you provide) on each element of the array,
+//  resulting in a single output value. The reducer function takes four arguments: accumulator, currentValue, 
+// currentIndex, and the array itself. The reduce method can also take an optional initialValue as the second argument.
+//  If no initialValue is provided, the first element of the array will be used as the initial accumulator value, and the 
+// iteration will start from the second element.
+// ***************//
+const arr = [1, 2, 3, 4];
 Array.prototype.myReduce = function (callBack, initialValue) {
     // 1. Determine if initialValue was passed
     // If no initialValue is provided, accumulator defaults to the first element
@@ -67,14 +74,12 @@ Array.prototype.myReduce = function (callBack, initialValue) {
         // Update the accumulator with the result of the callback
         accumulator = callBack(accumulator, this[i], i, this);
     }
-
     // 4. Crucial: Return the final accumulated result!
     return accumulator;
 };
-
 const result = arr.myReduce((acc, curr) => acc + curr, 0);
-
 console.log(result); // Output: 10
+// ******************************************* reduce method end ************************************
 
 
 
