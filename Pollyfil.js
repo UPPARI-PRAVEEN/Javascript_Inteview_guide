@@ -1,4 +1,9 @@
 let arr = [1,2,3]
+// filter method polyfill
+// explanation: The filter method creates a new array with all elements that pass 
+// the test implemented by the provided function. It takes a callback function as an 
+// argument, which is called for each element in the array. If the callback returns true, 
+// the element is included in the new array; if it returns false, the element is excluded.
 Array.prototype.myFilter = function(callBack){
     console.log(this)
     let result = []
