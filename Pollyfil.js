@@ -1,3 +1,4 @@
+// ******************************************* filter method polyfill ************************************ //
 let arr = [1,2,3]
 // filter method polyfill
 // explanation: The filter method creates a new array with all elements that pass 
@@ -20,11 +21,15 @@ Array.prototype.myFilter = function(callBack){
 
 let res = arr.myFilter((item,index)=> item % 2 == 0)
 console.log(res)
+// *******************************************filter methods end************************************ //
 
-
-
+// explainint the map method: The map method creates a new array populated with the results of calling a 
+// provided function on every element in the calling array. It takes a callback function as an argument, 
+// which is called for each element in the array. The callback function receives three arguments: the
+//  current element, the index of the current element, and the array itself. The return value of the 
+// callback function is used to populate the new array.
+// ****************************************** map method polyfill ************************************ //
 let arr = [1, 1, 2];
-
 // 1. Recreate the custom map method
 Array.prototype.myMap = function(callBack) {
     let resultArray = [];
@@ -44,12 +49,8 @@ let doubled = arr.myMap((item, index) => {
     console.log(`Processing index ${index}: ${item} * 2`);
     return item * 2;
 });
-
 console.log("Returned Array:", doubled);
-
-
-
-
+// ****************************************** map method end ************************************ //
 const arr = [1, 2, 3, 4];
 
 Array.prototype.myReduce = function (callBack, initialValue) {
