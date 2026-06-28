@@ -182,6 +182,7 @@ console.log(res)
 
 myFun()
 
+
 // **************************************** Promise .any **********************************************//
 // explanation: The Promise.any() method takes an iterable of promises as input and returns a single Promise that resolves 
 // as soon as any of the promises in the iterable resolves, with the value from that promise. If all of the promises reject, 
