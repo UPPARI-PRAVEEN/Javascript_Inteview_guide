@@ -82,14 +82,16 @@ console.log(result); // Output: 10
 // ******************************************* reduce method end ************************************
 
 
-
-//Promise.all
+//********************************** Promise.all **********************************************//
+// explanation: The Promise.all() method takes an iterable of promises as input and returns a single Promise that resolves 
+// when all of the promises in the iterable have resolved or rejects with the reason of the first promise that rejects. 
+// It is useful for running multiple asynchronous operations in parallel and waiting for all of them to complete before proceeding.
 function promiseAllFunc(promises){
     return new Promise((resolve,reject)=>{
         result = []
         completed =0
         promises.forEach((prom,index)=>{
-            Promise.resolve(prom)
+            Promise.resolve(prom) // here promises is sucess or failure so we are using Promise.resolve to handle both cases
             .then((res)=>{
                 result[index] = res
                 completed++
@@ -113,6 +115,11 @@ console.log(res3)
 myFun()
 
 
+// *********************************** Promise.allSettled **********************************************//
+// explanation: The Promise.allSettled() method takes an iterable of promises as input and returns a single Promise that resolves 
+// when all of the promises in the iterable have settled (either resolved or rejected). It returns an array of objects, 
+// each representing the outcome of each promise, with a status property indicating whether the promise was fulfilled or rejected, 
+// and a value or reason property containing the result or error.
 
 function promiseAllSettledFunc(promises){
     return new Promise((resolve,reject)=>{
@@ -123,10 +130,6 @@ function promiseAllSettledFunc(promises){
             .then((res)=>{
                 result[index] = res
                 completed++
-
-                if(completed === promises.length){
-                    resolve(result)
-                }
             })
             .catch((err)=>{
                 result[index] = err
@@ -142,8 +145,12 @@ function promiseAllSettledFunc(promises){
     })
 }
 
-//Promise .race
-function promiseAnyFunc(promises){
+// **************************************** Promise .race **********************************************//
+// explanation: The Promise.race() method takes an iterable of promises as input and returns a single
+//  Promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects, 
+// with the value or reason from that promise. It is useful for scenarios where you want to proceed with 
+// the first completed promise, regardless of whether it was successful or not.
+function promiseraceFunc(promises){
     return new Promise((resolve,reject)=>{
         result = ""
         rejectCount = 0
@@ -175,7 +182,11 @@ console.log(res)
 
 myFun()
 
-
+// **************************************** Promise .any **********************************************//
+// explanation: The Promise.any() method takes an iterable of promises as input and returns a single Promise that resolves 
+// as soon as any of the promises in the iterable resolves, with the value from that promise. If all of the promises reject, 
+// it rejects with an AggregateError containing all the rejection reasons. It is useful for scenarios where you want to proceed 
+// with the first successful promise, ignoring any failures.
 function promiseAnyFunc(promises) {
   return new Promise((resolve, reject) => {
     let rejectCount = 0;
