@@ -159,6 +159,9 @@ console.log(res)
 // console.log(res2)
 // console.log(res3)
 }
+
+
+
 myFun()
 
 
@@ -183,6 +186,8 @@ function promiseAnyFunc(promises) {
     });
   });
 }
+
+
 
 
 
