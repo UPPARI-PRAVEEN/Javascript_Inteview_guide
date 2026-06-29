@@ -1,3 +1,7 @@
+// explaining promise.all  is a method that takes an iterable of promises as input and returns 
+// a single Promise that resolves when all of the promises in the iterable have resolved, or 
+// rejects if any of the promises reject. It is useful for scenarios where you want to wait for 
+// multiple asynchronous operations to complete before proceeding.
 const promise = new Promise((resolve,reject)=>{
     let sucess = true
     if(sucess){
@@ -53,6 +57,10 @@ const myPromise = new Promise((resolve, reject) => {
     .catch((err) => reject(err)); // add reject
 });
 
+// explaining promise.all  is a method that takes an iterable of promises as input and returns 
+// a single Promise that resolves when all of the promises in the iterable have resolved, or 
+// rejects if any of the promises reject. It is useful for scenarios where you want to wait for 
+// multiple asynchronous operations to complete before proceeding.
 const myPromise1 = new Promise((resolve, reject) => {
   localFetch()
     .then((res) => res.json()) // fix here
