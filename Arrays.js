@@ -10,3 +10,8 @@ arr.forEach((item,index)=>{
     res[item.id] = item
 })
 console.log(res[1])
+
+const res = arr.reduce((acc, item) => {
+  acc[item.id] = item;
+  return acc;
+}, {});
