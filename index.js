@@ -49,7 +49,7 @@
 // // // add(1, 3); // Success: 4
 // // // add(1, 'a'); // Error in the code: Invalid numbers
 
-// // // console.log(NaN === NaN)//false
+// // // console.log(NaN === NaN)//false beacause NaN is not equal to itself 
 // // // console.log(NaN == NaN)//false
 // // // console.log(typeof NaN)//number
 // // // console.log(typeof NaN === typeof NaN)//true
@@ -296,8 +296,8 @@
 // //   }, 1000);
 // // }
 
-// // console.log(typeof null == typeof undefined)
-// // console.log(typeof null === typeof undefined)
+// // console.log(typeof null == typeof undefined) //true beacause null and undefined are both falsy values
+// // console.log(typeof null === typeof undefined)//false because null is an object and undefined is a type of undefined
 
 // // let arr =[1,2,4,5,6,1,3]
 // // console.log(arr.sort((a,b)=> b- a));
@@ -376,7 +376,7 @@
 // // let b = parseInt(a);
 // // //console.log(typeof b)
 
-// //console.log(a()); // What will be the output?
+// //console.log(a()); // What will be the output? // this will throw an error because a is a string and not a function, so calling it as a function will result in a TypeError.
 
 // // var a = function() {
 // //   return 'Hello';
@@ -617,7 +617,7 @@
 
 // // console.log(c());
 // // console.log(c())
-// // console.log(c())
+// // console.log(c())// output will be 1,2,3 because count is a global variable and it will be incremented by 1 each time the function is called
 
 // // console.log(isNaN("bb"))
 // // console.log(10 - "hie")
