@@ -6,11 +6,13 @@ const arr = [
 
 res = {};
 
+//accessing based on id using forEach
 arr.forEach((item, index) => {
   res[item.id] = item;
 });
 console.log(res[1]);
 
+//accessing based on id using reduce
 const res = arr.reduce((acc, item) => {
   acc[item.id] = item;
   return acc;
